@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Verastix | Enterprise Digital Solutions</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Dev Notice -->
+  <div class="development-notice" id="devNotice">
+    <p>🚧 Website Under Development 🚧 <span class="close-btn" id="closeDevNotice">&times;</span></p>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="Assets/logo.png" alt="Verastix Logo" />
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="theme-toggle" onclick="toggleTheme()">
+      <!-- Default: show Moon icon (to go Dark). The Sun shows in .dark-mode -->
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+    </div>
+    <div class="hamburger" id="hamburgerMenu">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="#services" onclick="closeMobileNav()">Services</a></li>
+      <li><a href="#team" onclick="closeMobileNav()">Team</a></li>
+      <li><a href="#contact" onclick="closeMobileNav()">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1 class="hero-title">Transformative Digital Solutions</h1>
+        <h2 class="hero-subtitle">
+          For The Modern <span class="accent">Enterprise</span>
+        </h2>
+        <p class="hero-description">
+          Delivering end-to-end enterprise solutions with cutting-edge technology
+        </p>
+        <a href="#services" class="btn btn-primary">Explore Services</a>
+      </div>
+      <div class="hero-image">
+        <!-- Use your own illustration, or remove if not needed -->
+        <img src="Assets/hero-illustration.gif" alt="Hero Illustration" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="container">
+      <h2 class="section-title">Core Services</h2>
+      <p class="section-subtitle">
+        We offer a wide range of digital solutions to elevate your enterprise.
+      </p>
+      <div class="cards">
+        <div class="card">
+          <i class="fas fa-code card-icon"></i>
+          <h3>Web Portal Development</h3>
+          <p>Custom enterprise portals with complete lifecycle management.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-mobile-alt card-icon"></i>
+          <h3>Mobile Development</h3>
+          <p>Cross-platform mobile solutions integrated with backend systems.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-brain card-icon"></i>
+          <h3>AI Integration</h3>
+          <p>Machine learning and automation solutions.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-shopping-cart card-icon"></i>
+          <h3>E-commerce Systems</h3>
+          <p>Scalable online marketplace solutions.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-cloud card-icon"></i>
+          <h3>Cloud Solutions</h3>
+          <p>Secure cloud infrastructure and hosting services.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-chart-line card-icon"></i>
+          <h3>Digital Marketing</h3>
+          <p>Full-service online advertising and SEO.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="section" id="team">
+    <div class="container">
+      <h2 class="section-title">Visionary Leadership</h2>
+      <p class="section-subtitle">
+        Meet the minds shaping the future of digital transformation.
+      </p>
+      <div class="team-cards">
+        <div class="team-card">
+          <img src="Assets/Abhishek.jpeg" alt="Abhishek Kandel" class="team-img"/>
+          <h3 class="team-name">Abhishek Kandel</h3>
+          <p class="team-role">Chief Technology Officer</p>
+          <p class="team-desc">
+            Full-stack architect specializing in enterprise solutions and AI integration
+          </p>
+          <div class="social-links">
+            <a href="https://linkedin.com/in/abhishekkandel45" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://abhishekkandel.com.np" target="_blank"><i class="fas fa-globe"></i></a>
+          </div>
+        </div>
+        <div class="team-card">
+          <img src="Assets/anita.jpg" alt="Anita Karki" class="team-img"/>
+          <h3 class="team-name">Anita Karki</h3>
+          <p class="team-role">Chief Operations Officer</p>
+          <p class="team-desc">
+            Digital transformation strategist and process optimization expert
+          </p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/anita-karki-3a49b4249/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://anitakarki.com.np" target="_blank"><i class="fas fa-globe"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Start Your Digital Transformation</h2>
+      <p class="section-subtitle">
+        Ready to take your enterprise to the next level? Contact us today.
+      </p>
+      <a href="mailto:info@verastix.com" class="btn btn-accent">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="currentYear"></span> Verastix. All rights reserved.</p>
+      <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+      </script>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/verastix/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://facebook.com/vera.stix"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com/vera.stix"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/https://github.com/orgs/Verastix/"><i class="fab fa-github"></i></a>        git add .
+        git commit -m "Initial commit of Verastix website"
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP & ScrollTrigger (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>
