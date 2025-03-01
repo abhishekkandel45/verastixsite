@@ -2,17 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Verastix provides transformative digital solutions for modern enterprises. Our services include web portal development, mobile development, AI integration, e-commerce systems, cloud solutions, and digital marketing." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.verastix.com" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Verastix | Enterprise Digital Solutions" />
+  <meta property="og:description" content="Delivering end-to-end enterprise solutions with cutting-edge technology for modern enterprises." />
+  <meta property="og:image" content="https://www.verastix.com/Assets/hero-illustration.gif" />
+  <meta property="og:url" content="https://www.verastix.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Verastix | Enterprise Digital Solutions" />
+  <meta name="twitter:description" content="Transformative digital solutions for the modern enterprise. Explore our services in web development, mobile apps, AI integration, and more." />
+  <meta name="twitter:image" content="https://www.verastix.com/Assets/hero-illustration.gif" />
+
   <title>Verastix | Enterprise Digital Solutions</title>
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <!-- Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
+  
+  <!-- Structured Data Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Verastix",
+    "url": "https://www.verastix.com",
+    "logo": "https://www.verastix.com/Assets/logo.png",
+    "sameAs": [
+      "https://www.linkedin.com/company/verastix/",
+      "https://facebook.com/vera.stix",
+      "https://instagram.com/vera.stix",
+      "https://github.com/orgs/Verastix/"
+    ]
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="Assets/favicon.ico" type="image/x-icon" />
 </head>
 <body>
   <!-- Dev Notice -->
@@ -23,7 +57,7 @@
   <!-- Header -->
   <header class="header">
     <div class="logo">
-      <img src="Assets/logo.png" alt="Verastix Logo" />
+      <img src="Assets/logo.png" alt="Verastix Logo" loading="lazy" />
     </div>
     <nav class="nav">
       <ul>
@@ -33,7 +67,6 @@
       </ul>
     </nav>
     <div class="theme-toggle" onclick="toggleTheme()">
-      <!-- Default: show Moon icon (to go Dark). The Sun shows in .dark-mode -->
       <i class="fas fa-moon"></i>
       <i class="fas fa-sun"></i>
     </div>
@@ -56,17 +89,14 @@
     <div class="hero-container">
       <div class="hero-text">
         <h1 class="hero-title">Transformative Digital Solutions</h1>
-        <h2 class="hero-subtitle">
-          For The Modern <span class="accent">Enterprise</span>
-        </h2>
+        <h2 class="hero-subtitle">For The Modern <span class="accent">Enterprise</span></h2>
         <p class="hero-description">
           Delivering end-to-end enterprise solutions with cutting-edge technology
         </p>
         <a href="#services" class="btn btn-primary">Explore Services</a>
       </div>
       <div class="hero-image">
-        <!-- Use your own illustration, or remove if not needed -->
-        <img src="Assets/hero-illustration.gif" alt="Hero Illustration" />
+        <img src="Assets/hero-illustration.gif" alt="Digital Transformation Illustration" loading="lazy" />
       </div>
     </div>
   </section>
@@ -122,27 +152,27 @@
       </p>
       <div class="team-cards">
         <div class="team-card">
-          <img src="Assets/Abhishek.jpeg" alt="Abhishek Kandel" class="team-img"/>
+          <img src="Assets/Abhishek.jpeg" alt="Abhishek Kandel - Chief Technology Officer" class="team-img" loading="lazy" />
           <h3 class="team-name">Abhishek Kandel</h3>
           <p class="team-role">Chief Technology Officer</p>
           <p class="team-desc">
-            Full-stack architect specializing in enterprise solutions and AI integration
+            Full-stack architect specializing in enterprise solutions and AI integration.
           </p>
           <div class="social-links">
-            <a href="https://linkedin.com/in/abhishekkandel45" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://abhishekkandel.com.np" target="_blank"><i class="fas fa-globe"></i></a>
+            <a href="https://linkedin.com/in/abhishekkandel45" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+            <a href="https://abhishekkandel.com.np" target="_blank" rel="noopener"><i class="fas fa-globe"></i></a>
           </div>
         </div>
         <div class="team-card">
-          <img src="Assets/anita.jpg" alt="Anita Karki" class="team-img"/>
+          <img src="Assets/anita.jpg" alt="Anita Karki - Chief Operations Officer" class="team-img" loading="lazy" />
           <h3 class="team-name">Anita Karki</h3>
           <p class="team-role">Chief Operations Officer</p>
           <p class="team-desc">
-            Digital transformation strategist and process optimization expert
+            Digital transformation strategist and process optimization expert.
           </p>
           <div class="social-links">
-            <a href="https://www.linkedin.com/in/anita-karki-3a49b4249/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://anitakarki.com.np" target="_blank"><i class="fas fa-globe"></i></a>
+            <a href="https://www.linkedin.com/in/anita-karki-3a49b4249/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+            <a href="https://anitakarki.com.np" target="_blank" rel="noopener"><i class="fas fa-globe"></i></a>
           </div>
         </div>
       </div>
@@ -168,11 +198,10 @@
         document.getElementById('currentYear').textContent = new Date().getFullYear();
       </script>
       <div class="footer-social">
-        <a href="https://www.linkedin.com/company/verastix/"><i class="fab fa-linkedin"></i></a>
-        <a href="https://facebook.com/vera.stix"><i class="fab fa-facebook"></i></a>
-        <a href="https://instagram.com/vera.stix"><i class="fab fa-instagram"></i></a>
-        <a href="https://github.com/https://github.com/orgs/Verastix/"><i class="fab fa-github"></i></a>        git add .
-        git commit -m "Initial commit of Verastix website"
+        <a href="https://www.linkedin.com/company/verastix/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+        <a href="https://facebook.com/vera.stix" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com/vera.stix" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/orgs/Verastix/" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
       </div>
     </div>
   </footer>
