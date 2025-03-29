@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Access Denied</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: #ff4f4f;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 20px;
+      margin: 5px;
+    }
+    .country {
+      font-weight: bold;
+      color: #00ffff;
+    }
+  </style>
+</head>
+<body>
+  <h1>🚫 Access Denied</h1>
+  <p>This admin panel is currently <strong>restricted</strong>.</p>
+  <p>Due to a <strong>High DDoS Attack</strong>, you cannot access it from here.</p>
+  <p>Your country: <span class="country">Loading...</span></p>
+
+  <script>
+    fetch('https://ipapi.co/json/')
+      .then(res => res.json())
+      .then(data => {
+        document.querySelector('.country').textContent = data.country_name;
+      })
+      .catch(() => {
+        document.querySelector('.country').textContent = "Unknown";
+      });
+  </script>
+</body>
+</html>
